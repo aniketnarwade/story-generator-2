@@ -17,7 +17,7 @@ export default function StoryBook({ story }: Props) {
       {/* <h1>{JSON.stringify(story.story.pages[parseInt("0")].page_content)}</h1> */}
       <CarouselContent className="cursor-pointer">
         <CarouselItem>
-          <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-yellow-100 via-white to-yellow-100 p-8 gap-x-4">
+          <div className="flex h-screen flex-col md:flex-row items-center justify-center bg-gradient-to-r from-yellow-100 via-white to-yellow-100 p-8 gap-x-4">
             <h2 className="flex-1 text-center text-4xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-0 select-none">
               {story.story.story_title}
             </h2>
@@ -35,7 +35,7 @@ export default function StoryBook({ story }: Props) {
         {/* <pre>{JSON.stringify(story)}</pre> */}
         {Object.keys(story.story.pages).map((index) => (
           <CarouselItem key={index}>
-            <div className="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-yellow-100 via-white to-yellow-100 p-8 gap-x-4">
+            <div className="flex h-screen flex-col md:flex-row items-center justify-between bg-gradient-to-r from-yellow-100 via-white to-yellow-100 p-8 gap-x-4">
               <p className="flex-1 text-lg md:text-2xl text-gray-700 leading-relaxed max-w-lg select-none">
                 {story.story.pages[parseInt(index)].page_content}
               </p>

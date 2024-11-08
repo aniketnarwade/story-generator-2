@@ -12,7 +12,7 @@ export default async function Story({ params }: Props) {
 
   const story: StoryDoc = await fetchStoryById(storyId);
   return (
-    <div className="my-24 max-w-7xl mx-auto bg-white rounded-2xl drop-shadow-md">
+    <div className="my-8 max-w-7xl mx-auto bg-white rounded-2xl drop-shadow-md">
       <StoryBook story={story} />
       {/* <pre>{JSON.stringify(story)}</pre> */}
     </div>
